@@ -1,0 +1,10 @@
+<div class="event-listeners-section">
+  <h2>Event Listeners</h2>
+  <input
+    type="text"
+    (keyup.enter)="onKeyUp($event)"
+    (blur)="onBlur(myInput.value)"
+    #myInput
+  />
+  <p>{{ inputValue }}</p>
+</div>
