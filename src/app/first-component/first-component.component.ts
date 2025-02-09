@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class FirstComponentComponent {
   name: string = 'John';
+
+  constructor() {
+    setTimeout(() => {
+      // Binding data to the template
+      this.name = 'Jane';
+    }, 2000);
+  }
 }
