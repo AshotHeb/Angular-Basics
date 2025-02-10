@@ -1,7 +1,16 @@
 <div class="ng-class">
   <p [ngClass]="{ 'text-red': true }">NgClass</p>
+
+  <h3>First Variant</h3>
   <button (click)="className = className === 'circle' ? '' : 'circle'">
     Update Figure
   </button>
   <div class="figure" [ngClass]="className"></div>
+
+  <hr />
+  <h3>Second Variant</h3>
+  <button (click)="secondVariantIsCircle = !secondVariantIsCircle">
+    Update Figure
+  </button>
+  <div class="figure" [class.circle]="secondVariantIsCircle"></div>
 </div>

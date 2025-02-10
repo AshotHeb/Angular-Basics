@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class NgClassComponent {
   className: string = 'circle';
+  secondVariantIsCircle: boolean = true;
 }
