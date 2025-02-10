@@ -4,6 +4,7 @@ import { FirstComponentComponent } from './first-component/first-component.compo
 import { EventListenersComponent } from './event-listeners/event-listeners.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
+import { NgClassComponent } from './ng-class/ng-class.component';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
     EventListenersComponent,
     TwoWayBindingComponent,
     NgStyleComponent,
+    NgClassComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

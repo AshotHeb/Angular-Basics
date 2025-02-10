@@ -1,0 +1,7 @@
+<div class="ng-class">
+  <p [ngClass]="{ 'text-red': true }">NgClass</p>
+  <button (click)="className = className === 'circle' ? '' : 'circle'">
+    Update Figure
+  </button>
+  <div class="figure" [ngClass]="className"></div>
+</div>
