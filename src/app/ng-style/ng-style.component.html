@@ -1,0 +1,6 @@
+<div class="ng-style">
+  <button (click)="color = color === 'red' ? 'blue' : 'red'">
+    Change Color
+  </button>
+  <h2 [ngStyle]="{ fontSize: '20px', color: color }">Ng Style</h2>
+</div>

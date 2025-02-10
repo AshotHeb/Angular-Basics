@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { FirstComponentComponent } from './first-component/first-component.component';
 import { EventListenersComponent } from './event-listeners/event-listeners.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,7 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
     FirstComponentComponent,
     EventListenersComponent,
     TwoWayBindingComponent,
+    NgStyleComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
