@@ -5,6 +5,7 @@ import { EventListenersComponent } from './event-listeners/event-listeners.compo
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgIfComponent } from './ng-if/ng-if.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { NgClassComponent } from './ng-class/ng-class.component';
     TwoWayBindingComponent,
     NgStyleComponent,
     NgClassComponent,
+    NgIfComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
