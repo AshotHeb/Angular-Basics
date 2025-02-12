@@ -6,6 +6,7 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
+import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,7 @@ import { NgIfComponent } from './ng-if/ng-if.component';
     NgStyleComponent,
     NgClassComponent,
     NgIfComponent,
+    NgSwitchComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

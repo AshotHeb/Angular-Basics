@@ -1,0 +1,22 @@
+<div class="ng-style">
+  <h3>First Variant</h3>
+
+  <button (click)="isBlueParagraph = !isBlueParagraph">Change Paragraph</button>
+
+  <p [ngSwitch]="isBlueParagraph">
+    <span *ngSwitchCase="true">Blue</span>
+    <span *ngSwitchCase="false">Red </span>
+    <span *ngSwitchDefault>Default</span>
+  </p>
+
+  <hr />
+  <h3>Second Variant</h3>
+  <button (click)="color = color === 'blue' ? 'red' : 'blue'">
+    Change Paragraph
+  </button>
+  <p [ngSwitch]="color">
+    <span *ngSwitchCase="'blue'">Blue</span>
+    <span *ngSwitchCase="'red'">Red</span>
+    <span *ngSwitchDefault>Default</span>
+  </p>
+</div>
