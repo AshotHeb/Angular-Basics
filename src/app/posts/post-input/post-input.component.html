@@ -1,5 +1,11 @@
 <div class="post-input">
-  <input type="text" placeholder="Title" class="input" [(ngModel)]="title" />
+  <input
+    type="text"
+    placeholder="Title"
+    class="input"
+    [(ngModel)]="title"
+    #postTitleInput
+  />
   <input
     type="text"
     placeholder="Content"
@@ -7,4 +13,7 @@
     [(ngModel)]="content"
   />
   <button class="button" (click)="addPost()">Add Post</button>
+  <button class="button" (click)="onFocusPostTitleInput()">
+    Focus On title
+  </button>
 </div>

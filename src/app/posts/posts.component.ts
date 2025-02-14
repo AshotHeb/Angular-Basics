@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { PostInputComponent } from './post-input/post-input.component';
 import { PostComponent } from './post/post.component';
 import { CommonModule } from '@angular/common';

@@ -1,5 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Output } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  Output,
+  ViewChild,
+} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Post } from '../posts.component';
 @Component({
@@ -10,6 +16,9 @@ import { Post } from '../posts.component';
 })
 export class PostInputComponent {
   @Output() postAdded = new EventEmitter<Post>();
+  // This like React's ref // Սա պարտադիր պետք է անել այն կոմպոնենտի մեջ, որտեղ #postTitleInput գտնվում է
+  @ViewChild('postTitleInput', { static: false }) postTitleInput!: ElementRef;
+
   title = '';
   content = '';
 
@@ -27,5 +36,9 @@ export class PostInputComponent {
 
     this.postAdded.emit(post);
     this.content = this.title = '';
+  }
+
+  onFocusPostTitleInput() {
+    this.postTitleInput.nativeElement.focus();
   }
 }
