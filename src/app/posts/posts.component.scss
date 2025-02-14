@@ -1,0 +1,13 @@
+.posts {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
