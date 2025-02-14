@@ -2,12 +2,14 @@
   <app-post-input (postAdded)="addPost($event)"></app-post-input>
   <div class="posts-list">
     <app-post *ngFor="let post of posts" [post]="post">
-      <p *ngIf="post.title.length > 10; else shortTitle" class="long-title">
-        Long Title
-      </p>
-      <ng-template #shortTitle>
-        <p class="short-title">Short Title</p>
-      </ng-template>
+      <div #postMessage>
+        <p *ngIf="post.title.length > 10; else shortTitle" class="long-title">
+          {{ post.title }}
+        </p>
+        <ng-template #shortTitle>
+          <p class="short-title">Short Title</p>
+        </ng-template>
+      </div>
     </app-post>
   </div>
 </div>

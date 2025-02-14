@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, ContentChild, ElementRef, Input } from '@angular/core';
 import { Post } from '../posts.component';
 import { CommonModule } from '@angular/common';
 
@@ -11,4 +11,10 @@ import { CommonModule } from '@angular/common';
 export class PostComponent {
   // ! is the required operator
   @Input() post!: Post;
+
+  @ContentChild('postMessage') postMessage!: ElementRef;
+
+  ngAfterContentInit() {
+    console.log(this.postMessage.nativeElement);
+  }
 }
