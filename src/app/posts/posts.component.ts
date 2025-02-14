@@ -24,7 +24,8 @@ export class PostsComponent {
     },
     {
       title: 'Second Post',
-      content: 'This is the second post',
+      content:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos',
       id: 2,
     },
   ];
