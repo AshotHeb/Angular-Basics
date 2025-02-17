@@ -1,4 +1,10 @@
-import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  OnChanges,
+  OnInit,
+  SimpleChanges,
+} from '@angular/core';
 import { PostInputComponent } from './post-input/post-input.component';
 import { PostComponent } from './post/post.component';
 import { CommonModule } from '@angular/common';
@@ -14,6 +20,7 @@ export interface Post {
   imports: [CommonModule, PostInputComponent, PostComponent],
   templateUrl: './posts.component.html',
   styleUrl: './posts.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PostsComponent implements OnChanges, OnInit {
   posts: Post[] = [
@@ -55,7 +62,7 @@ export class PostsComponent implements OnChanges, OnInit {
 
   ngDoCheck() {
     // Աշխատում է կոմպոնենտի ամեն մի փոփոխության դեպքում (componentDidUpdate-ի նման React-ի)
-    // console.log('PostsComponent -- ngDoCheck');
+    console.log('PostsComponent -- ngDoCheck');
   }
 
   ngAfterViewInit() {

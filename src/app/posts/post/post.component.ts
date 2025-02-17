@@ -25,16 +25,16 @@ export class PostComponent {
   ngAfterContentInit() {
     // Երբ կոմպոնենտը ստանում է դրսից content (children in React) և ավարտվում է այդ content-ի նկարվելը DOM-ի մեջ,կանչվում է այս մեթոդը
     // console.log(this.postMessage.nativeElement);
-    console.log('PostComponent -- ngAfterContentInit');
+    // console.log('PostComponent -- ngAfterContentInit');
   }
 
   ngAfterContentChecked() {
     // Երբ այդ content-ը update է լինում ,այդ ժամանակ այս մեթոդն է կանչվում
-    console.log('PostComponent --  ngAfterContentChecked');
+    // console.log('PostComponent --  ngAfterContentChecked');
   }
 
   ngOnDestroy() {
     // Երբ կոմպոնենտը ջնջվում է ,այդ ժամանակ այս մեթոդն է կանչվում
-    console.log('PostComponent --  ngOnDestroy');
+    // console.log('PostComponent --  ngOnDestroy');
   }
 }
