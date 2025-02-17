@@ -4,6 +4,7 @@ import {
   OnChanges,
   OnInit,
   SimpleChanges,
+  ViewEncapsulation,
 } from '@angular/core';
 import { PostInputComponent } from './post-input/post-input.component';
 import { PostComponent } from './post/post.component';
@@ -21,6 +22,7 @@ export interface Post {
   templateUrl: './posts.component.html',
   styleUrl: './posts.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  encapsulation: ViewEncapsulation.None,
 })
 export class PostsComponent implements OnChanges, OnInit {
   posts: Post[] = [
