@@ -1,5 +1,7 @@
 <div class="card">
   <h2>{{ post.title }}</h2>
   <p>{{ post.content }}</p>
+  <button (click)="deletePost.emit()">Delete</button>
+
   <ng-content></ng-content>
 </div>

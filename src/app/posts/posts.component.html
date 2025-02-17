@@ -1,7 +1,11 @@
 <div class="posts">
   <app-post-input (postAdded)="addPost($event)"></app-post-input>
   <div class="posts-list">
-    <app-post *ngFor="let post of posts" [post]="post">
+    <app-post
+      *ngFor="let post of posts"
+      [post]="post"
+      (deletePost)="deletePost(post)"
+    >
       <div #postMessage>
         <p *ngIf="post.title.length > 10; else shortTitle" class="long-title">
           {{ post.title }}
